@@ -61,8 +61,7 @@
 header {
    display: grid;
    row-gap: 20px;
-   padding: 0 2vw;
-   padding-top: 20px;
+   padding: 20px 2vw;
 }
 
 header>div{
@@ -110,18 +109,20 @@ header nav ul a:hover{
    color: var(--color-black);
    transition: all 0.7s;
 }
-main section.header {
-   background-image: url(/images/fa9b27255272d76e665cce4314b4aedb.jpg);
-   height: 60vw;
+
+main section.header{
+   background-image: url(../images/sectionHeader.jpg);
+   height: 42vw;
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: 0% 20%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    align-items: center;
    padding-right: 8vw;
 }
 
-main section.header div {
+main section.header div{
    display: grid;
    row-gap: 20px;
    background-color: var(--color-white);
@@ -129,21 +130,17 @@ main section.header div {
    grid-template-rows: max-content;
    height: 64%;
    padding: 5vw;
+
 }
 
 main section.header div h1{
    font-family: "Clash Display";
-   font-size: 2;
+   font-size: 32px;
    font-weight: 400;
 }
 
 main section.header div span{
-   font-family: "Satoshi";
-   font-size: 18;
-   font-weight: 400;
-}
-
-main section.header div span{
+   font-family: Satoshi;
    font-size: 18px;
 }
 
@@ -156,6 +153,7 @@ main section.our-brand{
    padding: 80px 6vw;
    display: grid;
    row-gap: 36px;
+   padding-bottom: 40px;
 }
 
 main section.our-brand h2{
@@ -174,13 +172,16 @@ main section.our-brand div{
 main section.our-brand div article{
    display: grid;
    grid-template-rows: 24px repeat(2, 1fr);
+   row-gap: 12px;
+   padding: 48px;
+   background-color: var(--color-lite-gray);
 }
 
 main section.our-brand div article svg{
    height: 100%;
 }
 
-main section.ourbrand div article.h3{
+main section.our-brand div article h3{
    font-family: "Clash Display";
    font-size: 20px;
    font-weight: 400;
@@ -190,10 +191,11 @@ main section.our-brand div article p{
    font-family: Satoshi;
 }
 
-main section.new-towar {
+main section.new-tovar {
    padding: 80px 6vw;
    display: grid;
    row-gap: 36px;
+   padding-top: 40px;
 }
 
 main section.new-tovar div{
@@ -202,12 +204,11 @@ main section.new-tovar div{
    grid-template-columns: repeat(4, 1fr);
 }
 
-main section.new-towar div article{
+main section.new-tovar div article{
    display: grid;
    grid-template-rows: 305px 1fr;
    row-gap: 24px;
 }
-
 
 main section.new-tovar div article:hover{
    transform: scale(1.05);
@@ -230,9 +231,78 @@ main section.new-tovar div p {
 }
 
 main section.new-tovar div p span{
-   font-family: Satoshi
+   font-family: Satoshi;
 }
 
 main section.new-tovar a{
    justify-self: center;
+}
+
+main section.started{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 60px;
+   grid-template-rows: 36vw;
+   padding: 60px 6vw;
+}
+
+main section.started div{
+   background-color: var(--color-dark-primary);
+   padding: 5vw;
+   color: var(--color-white);
+   display: grid;
+   grid-template-rows: max-content;
+   row-gap: 12px;
+}
+
+main section.started img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+main section.started div a{
+   justify-self: start;
+   align-self: end;
+   background-color: var(--color-nav-links);
+   color: var(--color-white);
+}
+
+main section.started div h2 {
+   font-family: "Clash Display";
+   font-weight: 400;
+   font-size: 30px;
+}
+
+
+main section.form{
+   background-image: url(../images/image.jpg);
+   color: var(--color-white);
+   background-color: var(--color-dark-primarri);
+   background-size: cover;
+   background-position: 0% 56%;
+   display: grid;
+   row-gap: 30px;
+   justify-items: center;
+   padding: 80px 0;
+   
+}
+main section.form ul{
+   display: flex;
+   column-gap: 36px;
+}
+main section.form ul li{
+   display: grid;
+   grid-template-columns: 16px 1fr;
+   column-gap: 4px;
+}
+main section.form ul li svg{
+   color: var(--color-wight);
+
+}
+main section.form form{
+   display: grid;
+   grid-template-columns: 3fr, 1fr;
+   grid-template-rows: 56px;
+
 }
